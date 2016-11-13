@@ -1,7 +1,5 @@
 require 'sinatra'
 require 'mongoid'
-require 'redcarpet'
-require 'slim'
 
 configure do
 	Mongoid.load!("./database.yml")
