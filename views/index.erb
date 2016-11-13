@@ -1,0 +1,14 @@
+<h1> Pages </h1>
+<a href="/pages/new"> Create a page and Smile :) </a>
+<% if @pages.any? %>
+<p>
+<%  @pages.each do |page| %>
+<a href="/pages/<%= page.id %>">
+<h1><%= page.title %> </h1>
+</a>
+<p> <%= page.text %> </p>
+<% end %>
+</p>
+<% else %>
+<h1> No pages added! </h1>
+<% end %>
