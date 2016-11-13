@@ -1,0 +1,14 @@
+development:
+ clients:
+  default:
+   database: myCMS
+   hosts:
+    - localhost:27017
+ production:
+  clients:
+   default:
+    uri: <%= ENV['MONGOHQ<em>URL'] %>
+    options:
+     skip_version_check: true
+     safe: true
+
